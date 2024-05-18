@@ -1,0 +1,143 @@
+﻿@page "/TravellingSalesmanProblem"
+@rendermode InteractiveServer
+<PageTitle>TravellingSalesmanProblem</PageTitle>
+<h3>Travelling Salesman Problem Solver</h3>
+
+<div class="container">
+    <h3 class="mt-4 text-center">Travelling Salesman Problem Solver</h3>
+
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-8">
+            <div>
+                <p>Travelling Salesman Problem Solver</p>
+                <button class="btn btn-primary" @onclick="FindWay">Find Best Way</button>
+            </div>
+            <div class="mt-4 text-center">
+                <p>Final Way:</p>
+                <p>
+                    @if (FinalWay != null)
+                    {
+                    <p>
+                            @foreach (var way in FinalWay)
+                            {
+                                <text>@way.ToString() => </text>
+                            }
+                          = @CountWay(FinalWay)
+                    </p>
+                    }
+                    else
+                    {
+                    <p>No real ways found.</p>
+                    }
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    public int N { get; set; } = 100;
+    public int Trys { get; set; } = 10000;
+    public int[] ParentWay { get; set; }
+    public int[] ChildWay { get; set; }
+    public int[]? FinalWay { get; set; }
+
+    public int[,] Matrix { get; set; }
+
+    public TravellingSalesmanProblem()
+    {
+        ParentWay = FillWay();
+        ChildWay = FillWay();
+        Matrix = FillMatrix();
+    }
+
+    public void FindWay()
+    {
+        for (int i = 0; i < Trys; i++)
+        {
+
+            if (CountWay(ChildWay) <= CountWay(ParentWay))
+            {
+                ParentWay = ChildWay;
+                ChildWay = FillWay();
+            }
+            else
+            {
+                ChildWay = FillWay();
+            }
+        }
+        FinalWay = ParentWay;
+    }
+
+    public int CountWay(int[] way)
+    {
+        int index1 = 0;
+        int index2 = 0;
+        int sum = 0;
+
+        foreach (var _ in way)
+        {
+            for (int i = 0; i < way.Length; i++)
+            {
+                if (index1 == way[i])
+                {
+                    index2 = i;
+                    sum += Matrix[index1, index2];
+                    index1++;
+                }
+            }
+        }
+        return sum;
+    }
+
+    public int[] FillWay()
+    {
+        int[] way = new int[N];
+        for (int i = 0; i < way.Length; i++)
+        {
+            way[i] = i;
+        }
+
+        Random rng = new Random();
+        for (int i = way.Length - 1; i > 0; i--)
+        {
+            int j = rng.Next(i);
+
+            // Swap elements until adjacent elements are distinct
+            while (j == i || way[i] == way[j])
+            {
+                j = rng.Next(i);
+            }
+
+            (way[i], way[j]) = (way[j], way[i]);
+        }
+        return way;
+    }
+
+    public int[,] FillMatrix()
+    {
+        var random = new Random();
+
+        int[,] matrix = new int[N, N];
+
+        for (int i = 0; i < N; i++)
+        {
+            for (int j = i; j < N; j++) 
+            {
+                if (i == j)
+                {
+                    matrix[i, j] = 0;
+                }
+                else
+                {
+                    int randomValue = random.Next(10, 90);
+                    matrix[i, j] = randomValue;
+                    matrix[j, i] = randomValue;
+                }
+            }
+        }
+
+        return matrix;
+    }
+}

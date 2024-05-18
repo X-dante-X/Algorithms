@@ -1,0 +1,196 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|d:\\projects\\back-end\\learning exercise\\algorithms\\components\\pages\\solveintegral.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|solutionrelative:components\\pages\\solveintegral.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|d:\\projects\\back-end\\learning exercise\\algorithms\\components\\pages\\sitoeratostenesa.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|solutionrelative:components\\pages\\sitoeratostenesa.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|d:\\projects\\back-end\\learning exercise\\algorithms\\components\\pages\\quinticequation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|solutionrelative:components\\pages\\quinticequation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|d:\\projects\\back-end\\learning exercise\\algorithms\\components\\pages\\cubicequation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|solutionrelative:components\\pages\\cubicequation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|d:\\projects\\back-end\\learning exercise\\algorithms\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|solutionrelative:components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|d:\\projects\\back-end\\learning exercise\\algorithms\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|d:\\projects\\back-end\\learning exercise\\algorithms\\components\\pages\\travellingsalesmanproblem.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|solutionrelative:components\\pages\\travellingsalesmanproblem.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|d:\\projects\\back-end\\learning exercise\\algorithms\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\Back-end\\Real project(C#)\\Szyfr\\Szyfr\\Pages\\SzyfrCezara.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|d:\\projects\\back-end\\learning exercise\\algorithms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AEF6B53-2AFB-40C5-9A9C-0A043B6B9450}|Algorithms.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.razor",
+              "DocumentMoniker": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Error.razor",
+              "ToolTip": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "Components\\Pages\\Error.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-25T14:27:11.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-25T14:27:10.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TravellingSalesmanProblem.razor",
+              "DocumentMoniker": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\TravellingSalesmanProblem.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\TravellingSalesmanProblem.razor",
+              "ToolTip": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\TravellingSalesmanProblem.razor",
+              "RelativeToolTip": "Components\\Pages\\TravellingSalesmanProblem.razor",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAMwBgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T09:36:18.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SolveIntegral.razor",
+              "DocumentMoniker": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\SolveIntegral.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\SolveIntegral.razor",
+              "ToolTip": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\SolveIntegral.razor",
+              "RelativeToolTip": "Components\\Pages\\SolveIntegral.razor",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAswE4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T12:45:35.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuinticEquation.razor",
+              "DocumentMoniker": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\QuinticEquation.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\QuinticEquation.razor",
+              "ToolTip": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\QuinticEquation.razor",
+              "RelativeToolTip": "Components\\Pages\\QuinticEquation.razor",
+              "ViewState": "AQIAACUAAAAAAAAAAAAiwAgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T12:26:53.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SitoEratostenesa.razor",
+              "DocumentMoniker": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\SitoEratostenesa.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\SitoEratostenesa.razor",
+              "ToolTip": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\SitoEratostenesa.razor",
+              "RelativeToolTip": "Components\\Pages\\SitoEratostenesa.razor",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAB0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T12:01:18.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SzyfrCezara.razor",
+              "DocumentMoniker": "D:\\Projects\\Back-end\\Real project(C#)\\Szyfr\\Szyfr\\Pages\\SzyfrCezara.razor",
+              "RelativeDocumentMoniker": "..\\..\\Real project(C#)\\Szyfr\\Szyfr\\Pages\\SzyfrCezara.razor",
+              "ToolTip": "D:\\Projects\\Back-end\\Real project(C#)\\Szyfr\\Szyfr\\Pages\\SzyfrCezara.razor",
+              "RelativeToolTip": "..\\..\\Real project(C#)\\Szyfr\\Szyfr\\Pages\\SzyfrCezara.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAC4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T11:52:13.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CubicEquation.razor",
+              "DocumentMoniker": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\CubicEquation.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\CubicEquation.razor",
+              "ToolTip": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Pages\\CubicEquation.razor",
+              "RelativeToolTip": "Components\\Pages\\CubicEquation.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACAAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T11:29:34.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAkwCUAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T11:45:17.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:27:13.78Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

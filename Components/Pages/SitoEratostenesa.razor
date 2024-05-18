@@ -1,0 +1,66 @@
+﻿@page "/SitoEratostenesa"
+@rendermode InteractiveServer
+
+<div class="container">
+    <h3 class="mt-4 text-center">Sito Eratostenesa</h3>
+
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-8">
+            <p>
+                Enter the final number of the interval: 
+                <input class="form-control" @bind="N" />
+            </p>
+            <div class="mt-4 text-center">
+                <button class="btn btn-primary" @onclick="EratosnesSieve">EratosnesSieve</button>
+            </div>
+            <div class="mt-4 text-center">
+                <p>Prime numbers:</p>
+                <p>
+                    @if (Primes != null)
+                    {
+                        @foreach (var prime in Primes)
+                        {
+                        <p style="font-weight: bold; color: #009688;">@prime</p>
+                        }
+                    }
+                    else
+                    {
+                    <p>No primes found.</p>
+                    }
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    public int N { get; set; }
+    public List<string>? Primes { get; set; } 
+
+    public void EratosnesSieve()
+    {
+        Primes = [];
+        List<int> arr = Enumerable.Range(3, N-1).ToList();
+
+
+        for (int i = 0; i < arr.Count; i++)
+        {
+            for (int j = i + 1; j < arr.Count; j++)
+            {
+                if (arr[i] != 0 && arr[j] != 0 && arr[j] % arr[i] == 0)
+                {
+                    arr[j] = 0;
+                }
+            }
+        }
+
+        for (int i = 0; i < arr.Count-9; i++)
+        {
+            if (arr[i] != 0 && arr[i + 2] != 0 && arr[i + 6] != 0 && arr[i + 8] != 0)
+            {
+                Primes.Add(string.Join(", ", arr[i], arr[i + 2], arr[i + 6], arr[i + 8]));
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Algorithms.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Algorithms.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Back-end\\learning exercise\\Algorithms\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Algorithms.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Algorithms.props",
+      "PackagePath": "build\\Algorithms.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Algorithms.props",
+      "PackagePath": "buildMultiTargeting\\Algorithms.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Algorithms.props",
+      "PackagePath": "buildTransitive\\Algorithms.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

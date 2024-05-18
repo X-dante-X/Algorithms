@@ -1,0 +1,139 @@
+﻿@page "/QuinticEquation"
+@rendermode InteractiveServer
+<PageTitle>QuinticEquation</PageTitle>
+
+<div class="container">
+    <h3 class="mt-4 text-center">Quintic Equation Solver</h3>
+
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="input-group mb-3" style="flex-wrap: nowrap;">
+                <span class="input-group-text" style="background-color: #FFC107; color: #fff;">Quintic equation:</span>
+                <input style="width: 10%;" type="number" class="form-control" placeholder="a" @bind="a" />
+                <span class="input-group-text">x<sup>5</sup> +</span>
+                <input style="width: 10%;" type="number" class="form-control" placeholder="b" @bind="b" />
+                <span class="input-group-text">x<sup>4</sup> +</span>
+                <input style="width: 10%;" type="number" class="form-control" placeholder="c" @bind="c" />
+                <span class="input-group-text">x<sup>3</sup> +</span>
+                <input style="width: 10%;" type="number" class="form-control" placeholder="d" @bind="d" />
+                <span class="input-group-text">x<sup>2</sup> +</span>
+                <input style="width: 10%;" type="number" class="form-control" placeholder="e" @bind="e" />
+                <span class="input-group-text">x +</span>
+                <input style="width: 10%;" type="number" class="form-control" placeholder="f" @bind="f" />
+                <span class="input-group-text">= 0</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="min">Min:</label>
+                    <input class="form-control" type="number" id="min" @bind="min" />
+                </div>
+                <div class="col-md-3">
+                    <label for="max">Max:</label>
+                    <input class="form-control" type="number" id="max" @bind="max" />
+                </div>
+                <div class="col-md-3">
+                    <label for="step">Step:</label>
+                    <input class="form-control" type="number" id="step" @bind="step" />
+                </div>
+                <div class="col-md-3">
+                    <label for="precision">Precision:</label>
+                    <input class="form-control" type="number" id="precision" @bind="precision" />
+                </div>
+            </div>
+
+            <div class="mt-4 text-center">
+                <button class="btn btn-primary" @onclick="FindRoots">Find Roots</button>
+            </div>
+
+            <div class="mt-4 text-center">
+                @if (Roots != null && Roots.Count > 0)
+                {
+                    @for (int i = 0; i < Roots.Count; i++)
+                    {
+                        <p style="font-weight: bold; color: #009688;">x@(i + 1) = @Roots[i]</p>
+                    }
+                }
+                else
+                {
+                    <p>No real roots found.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    public List<double>? Roots { get; set; }
+    public double a;
+    public double b;
+    public double c;
+    public double d;
+    public double e;
+    public double f;
+    public double min;
+    public double max;
+    public double step;
+    public double precision;
+
+    public void FindRoots()
+    {
+        Roots = [];
+
+        double f1 = SolveQuinticEquation(min, a, b, c, d, e, f);
+
+        for (double i = min + step; i <= max; i += step)
+        {
+            double f2 = SolveQuinticEquation(i, a, b, c, d, e, f);
+            if (Math.Abs(f2) < precision)
+            {
+                Roots.Add(i);
+                continue;
+            }
+
+            if (f1 * f2 < 0)
+            {
+                double from = f1;
+                double to = f2;
+                double idxFrom = i - step;
+                double idxTo = i;
+
+                while (true)
+                {
+                    double avgIdx = (idxFrom + idxTo) / 2;
+
+                    double fun = SolveQuinticEquation(avgIdx, a, b, c, d, e, f);
+
+                    if (Math.Abs(fun) < precision)
+                    {
+                        Roots.Add(avgIdx);
+                        break;
+                    }
+
+                    if (from * fun < 0)
+                    {
+                        to = fun;
+                        idxTo = avgIdx;
+                    }
+                    else if (fun * to < 0)
+                    {
+                        from = fun;
+                        idxFrom = avgIdx;
+                    }
+                    else
+                    {
+                        Roots.Add(avgIdx);
+                        break;
+                    }
+                }
+            }
+            f1 = f2;
+        }
+    }
+
+    public double SolveQuinticEquation(double x, double a, double b, double c, double d, double e, double f)
+    {
+        return a * Math.Pow(x, 5) + b * Math.Pow(x, 4) + c * Math.Pow(x, 3) + d * Math.Pow(x, 2) + e * x + f;
+    }
+}

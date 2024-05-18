@@ -1,0 +1,95 @@
+﻿@page "/SolveIntegral"
+@rendermode InteractiveServer
+<PageTitle>SolveIntegral</PageTitle>
+<div class="container">
+    <h3 class="mt-4 text-center">Solve Integral</h3>
+
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-8">
+            <p>
+                SolveIntegral: <i>f(x) = sin(x) + sin(2x) + sin(4x)</i>
+            </p>
+            <p>
+                Give the precision of the integral calculation:
+                <input type="number" class="form-control" @bind="precision" />
+            </p>
+
+            <div class="mt-4 text-center">
+                <button class="btn btn-primary" @onclick="MonteCarlo">
+                    Solve
+                </button>
+            </div>
+            <div class="mt-4 text-center">
+                <p>Roots:</p>
+                <p>
+                    @if (Root != null)
+                    {
+                        <p style="font-weight: bold; color: #009688;">@Root</p>
+                    }
+                    else
+                    {
+                    <p>No real roots found.</p>
+                    }
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    public double precision;
+    public double? Root;
+
+    public void MonteCarlo()
+    {
+        const double a = 0;
+        const double b = 2 * Math.PI;
+        const double h = 3;
+
+        Random random = new Random();
+        int countBelow = 0;
+        int totalCount = 0;
+
+        double integralPrevious = 0;
+        double integralCurrent;
+
+        while (true)
+        {
+            double x = GetRandomArbitrary(a, b, random);
+            double y = GetRandomArbitrary(0, h, random);
+
+            if (y <= SolveExampleFunction(x))
+            {
+                countBelow++;
+            }
+
+            totalCount++;
+
+            integralCurrent = CountIntegral(a, b, h, countBelow, totalCount);
+
+            if (Math.Abs(integralCurrent - integralPrevious) < precision && totalCount > 1000)
+            {
+                Root = integralCurrent;
+                break;
+            }
+
+            integralPrevious = integralCurrent;
+        }
+    }
+
+    public double GetRandomArbitrary(double min, double max, Random random)
+    {
+        return random.NextDouble() * (max - min) + min;
+    }
+
+    public double SolveExampleFunction(double x)
+    {
+        return Math.Sin(x) + Math.Sin(2 * x) + Math.Sin(4 * x);
+    }
+
+    public double CountIntegral(double a, double b, double h, int countBelow, int totalCount)
+    {
+        return (b - a) * h * ((double)countBelow / totalCount);
+    }
+}
